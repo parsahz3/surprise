@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ماجراجویی روز دختر 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#ffe3ee;--bg2:#ffc2da;--card:#fffafc;--ink:#7a2250;--pink:#ff5c9d;--soft:#ffd3e5;--ok:#2fb67c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#3a1428;--bg2:#2a0e1d;--card:#4a1c34;--ink:#ffd9ea;--soft:#6a2848}}
+:root[data-theme="dark"]{--bg1:#3a1428;--bg2:#2a0e1d;--card:#4a1c34;--ink:#ffd9ea;--soft:#6a2848}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{font-family:'Vazirmatn',Tahoma,sans-serif;background:linear-gradient(160deg,var(--bg1),var(--bg2));background-color:var(--bg1);color:var(--ink);display:flex;justify-content:center;padding:16px;min-height:100vh;transition:background .8s}
+body.love{background:radial-gradient(ellipse at 50% 100%,#7a1b45,#3b0d25 60%,#1d0613);background-color:#2b0a1c;color:#ffe8f1}
+#app{width:100%;max-width:460px;text-align:center}
+.card{background:var(--card);border:3px dashed var(--pink);border-radius:28px;padding:22px 18px;box-shadow:0 10px 30px #ff5c9d44;animation:pop .4s}
+@keyframes pop{from{transform:scale(.92);opacity:0}to{transform:none;opacity:1}}
+h1{font-size:1.5rem;margin:8px 0;font-weight:900}
+h2{font-size:1.15rem;margin:10px 0 14px}
+p{line-height:1.9;margin:8px 0}
+.hearts{font-size:1.4rem;letter-spacing:3px;margin-bottom:8px}
+.opt,.btn{display:block;width:100%;font:inherit;font-weight:700;border:0;border-radius:18px;padding:13px;margin:9px 0;cursor:pointer;color:var(--ink);background:var(--soft);transition:transform .15s}
+.opt:active,.btn:active{transform:scale(.97)}
+.btn{background:var(--pink);color:#fff;font-size:1.05rem;box-shadow:0 5px 0 #d63d7c}
+.opt.bad{background:#ff9bb8;animation:shake .4s}
+.opt.good{background:var(--ok);color:#fff}
+@keyframes shake{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+input{width:100%;font:inherit;text-align:center;padding:13px;border-radius:18px;border:2px solid var(--pink);background:var(--card);color:var(--ink);margin:8px 0;direction:ltr;letter-spacing:2px}
+.msg{min-height:1.8em;font-weight:700}
+.task{background:var(--soft);border-radius:18px;padding:12px;margin:10px 0}
+.fall,.rise{position:fixed;pointer-events:none;z-index:5}
+.fall{top:-30px;font-size:1.6rem;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.rise{bottom:-30px;animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-110vh) translateX(var(--dx,0px)) rotate(25deg);opacity:0}}
+svg{width:110px;height:auto}
+.timer{font-size:2rem;font-weight:900;color:var(--pink)}
+.err{background:#ffe0e8;color:#b3123f;border-radius:16px;padding:12px;margin-top:12px;font-weight:700;animation:shake .4s}
+/* romantic page */
+.love-wrap{padding-bottom:150px;position:relative;z-index:2}
+.letter{background:#ffffff14;border:1px solid #ff9bc455;border-radius:26px;padding:20px 18px;backdrop-filter:blur(4px);box-shadow:0 0 40px #ff3d8133}
+.letter h1{color:#ffb3d1}
+.letter p{opacity:0;animation:fadeup .9s forwards;text-align:right}
+@keyframes fadeup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.sign{text-align:center!important;font-weight:900;color:#ffb3d1}
+.candles{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:center;align-items:flex-end;gap:22px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:3;pointer-events:none;background:linear-gradient(transparent,#1d0613cc 60%)}
+.candle{position:relative;width:22px;border-radius:5px 5px 2px 2px;background:linear-gradient(90deg,#ffd0e1,#fff0f6,#ffc0d8)}
+.candle::before{content:"";position:absolute;top:-8px;left:50%;width:2px;height:8px;background:#5a2a3a;transform:translateX(-50%)}
+.flame{position:absolute;top:-34px;left:50%;width:14px;height:26px;margin-left:-7px;background:radial-gradient(ellipse at 50% 75%,#fff7c2 15%,#ffc43d 55%,#ff7a2e);border-radius:50% 50% 50% 50%/62% 62% 38% 38%;box-shadow:0 0 18px 8px #ffb34766,0 0 40px 18px #ff7a2e33;transform-origin:50% 100%;animation:flick .4s ease-in-out infinite alternate}
+.flame:nth-child(odd){animation-duration:.55s}
+@keyframes flick{0%{transform:scale(1,1) rotate(-3deg)}50%{transform:scale(.92,1.08) rotate(2deg)}100%{transform:scale(1.05,.95) rotate(-1deg)}}
+body.hot{background:radial-gradient(ellipse at 50% 100%,#8a0f2a,#3a0512 55%,#0d0105);background-color:#1a0208;color:#ffe3e8}
+.hot-wrap{padding:20px 6px;position:relative;z-index:2}
+.neon{font-size:1.6rem;color:#ff4d8d;text-shadow:0 0 8px #ff2d75,0 0 22px #ff0055;animation:glow 1.1s ease-in-out infinite alternate}
+@keyframes glow{from{opacity:.7}to{opacity:1;text-shadow:0 0 14px #ff2d75,0 0 40px #ff0055}}
+.big{font-size:3.4rem;font-weight:900;margin:18px 0;color:#fff;text-shadow:0 0 12px #ff2d75,0 0 34px #ff0055,0 0 60px #ff0055;animation:pulse .9s ease-in-out infinite alternate}
+@keyframes pulse{from{transform:scale(.94) rotate(-2deg)}to{transform:scale(1.08) rotate(2deg)}}
+.flames{font-size:2.4rem;animation:pulse .6s infinite alternate}
+.btn.no{background:#4a1020;box-shadow:0 5px 0 #2a0812;color:#ffd0dc}
+.evl{font-size:2.8rem;font-weight:900;color:#ffd24a;text-shadow:0 0 14px #ff7a2e;animation:bounce .7s infinite alternate;margin-top:18px}
+@keyframes bounce{from{transform:translateY(0) scale(1)}to{transform:translateY(-14px) scale(1.12)}}
+.soft{margin-top:14px;font-weight:700;animation:fadeup .6s both}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+var NAME = "پریا";
+var STAGES = [
+ {t:"quiz", title:"چالش اول: چقدر منو می‌شناسی؟ 🧠", q:"غذایی که بیشتر از همه من دوست دارم چیه؟", o:["زرشک پلو با مرغ","قورمه‌سبزی","کباب کوبیده","ماکارونی"], a:0},
+ {t:"task", title:"چالش دوم: ماموریت عکس 📸", task:"یه عکس خیلیییی خفن به من بده که بگم «واااااو جوووون چه جیگریه!» 😍 بعدش کد مخفی رو ازم بگیر.", code:"parsa joon"},
+ {t:"quiz", title:"چالش سوم: دنیای ورزش ⚽", q:"تیمی که از همه بیشتر دوستش دارم کدومه؟", o:["رئال مادرید","بارسلونا","بایرن مونیخ","منچستر سیتی"], a:1},
+ {t:"task", title:"چالش چهارم: وقت رقصه! 💃", task:"بلند شو با آهنگ «ای جونم» از سامی بیگی برقص و ویدیوش رو برام بفرست! 🎶 بعد از دیدن ویدیو، کد رو بهت میدم.", code:"shah parsa"},
+ {t:"task", title:"چالش آخر: پلانک 💪", task:"باید ۳۰ ثانیه پلانک بری! تایمر رو بزن و شروع کن. بعدش کد مخفی رو ازم بگیر 😎", code:"parsa sexy", timer:30}
+];
+var cat = '<svg viewBox="0 0 120 100"><polygon points="22,38 26,6 52,24" fill="#ffb3d1" stroke="#ff5c9d" stroke-width="3" stroke-linejoin="round"/><polygon points="98,38 94,6 68,24" fill="#ffb3d1" stroke="#ff5c9d" stroke-width="3" stroke-linejoin="round"/><ellipse cx="60" cy="58" rx="46" ry="36" fill="#fff0f6" stroke="#ff5c9d" stroke-width="3"/><circle cx="42" cy="56" r="5" fill="#7a2250"/><circle cx="78" cy="56" r="5" fill="#7a2250"/><ellipse cx="60" cy="66" rx="5" ry="3.5" fill="#ff5c9d"/><path d="M52 74q8 8 16 0" stroke="#7a2250" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="30" cy="68" r="6" fill="#ffc2da" opacity=".7"/><circle cx="90" cy="68" r="6" fill="#ffc2da" opacity=".7"/><path d="M84 22l12-6v14zM84 22l-4-8 16 2z" fill="#ff5c9d"/><circle cx="88" cy="22" r="4" fill="#ff8fbb"/></svg>';
+var app = document.getElementById('app'), i = 0, started = false, riseTimer = null, tick = null;
+try { i = parseInt(localStorage.getItem('gd_stage')) || 0; } catch(e){}
+if (i > 0) started = true;
+function save(){ try{ localStorage.setItem('gd_stage', i); }catch(e){} }
+function norm(s){ return s.replace(/[۰-۹]/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'.indexOf(d)}).replace(/\s+/g,' ').trim().toLowerCase(); }
+function shuffle(a){ a=a.slice(); for(var k=a.length-1;k>0;k--){ var j=Math.floor(Math.random()*(k+1)),t=a[k];a[k]=a[j];a[j]=t;} return a; }
+function hearts(){ var h=''; for(var k=0;k<STAGES.length;k++) h+= k<i ? '💖' : '🤍'; return '<div class="hearts">'+h+'</div>'; }
+function confetti(){
+ var e=['💖','🎀','🌸','✨','💕','🐱'];
+ for(var k=0;k<36;k++){ var s=document.createElement('span'); s.className='fall'; s.textContent=e[k%e.length];
+  s.style.left=Math.random()*100+'vw'; s.style.animationDuration=(2+Math.random()*3)+'s'; s.style.animationDelay=Math.random()*1.2+'s';
+  document.body.appendChild(s); setTimeout(function(x){x.remove()},6500,s); }
+}
+function next(){ i++; save(); render(); }
+function startHearts(){
+ if(riseTimer) return;
+ var e=['❤️','💖','💕','💗','🌹','💘'];
+ riseTimer=setInterval(function(){
+  var s=document.createElement('span'); s.className='rise'; s.textContent=e[Math.floor(Math.random()*e.length)];
+  s.style.left=Math.random()*100+'vw'; s.style.fontSize=(16+Math.random()*22)+'px';
+  s.style.setProperty('--dx',(Math.random()*80-40)+'px'); s.style.animationDuration=(5+Math.random()*4)+'s';
+  document.body.appendChild(s); setTimeout(function(){s.remove()},9500);
+ },380);
+}
+function candles(){
+ var hs=[70,100,130,100,70], h='<div class="candles">';
+ hs.forEach(function(x,k){ h+='<div class="candle" style="height:'+x+'px"><div class="flame" style="animation-delay:'+(k*.13)+'s"></div></div>'; });
+ return h+'</div>';
+}
+function spicy(){
+ document.body.classList.remove('love'); document.body.classList.add('hot');
+ if(riseTimer){clearInterval(riseTimer);riseTimer=null;}
+ var em=['🔥','😈','💋','❤️‍🔥','🌶️','💘'];
+ riseTimer=setInterval(function(){
+  var s=document.createElement('span'); s.className='rise'; s.textContent=em[Math.floor(Math.random()*em.length)];
+  s.style.left=Math.random()*100+'vw'; s.style.fontSize=(18+Math.random()*26)+'px';
+  s.style.setProperty('--dx',(Math.random()*100-50)+'px'); s.style.animationDuration=(3+Math.random()*3)+'s';
+  document.body.appendChild(s); setTimeout(function(){s.remove()},6500);
+ },260);
+ app.innerHTML='<div class="hot-wrap"><div class="flames">🔥🔥🔥</div><h1 class="neon">😈 بخش شیطون 😈</h1><div class="big">نـــود بـــده!</div><p>پریا جان... یه درخواست کوچولوی شیطون دارم 😏</p><button class="btn" id="yes">قبوله 😍</button><button class="btn no" id="no">گمشو 😝</button><div id="r"></div></div>';
+ window.scrollTo(0,0);
+ var r=document.getElementById('r'), n=0;
+ document.getElementById('yes').onclick=function(){
+  r.innerHTML='<div class="evl">ایووووووول! 🎉🔥💃</div>'; confetti(); setTimeout(confetti,1200); setTimeout(confetti,2400);
+ };
+ document.getElementById('no').onclick=function(){
+  n++;
+  r.innerHTML=n===1 ? '<div class="soft">واقعاً؟ 🥺 باشه، اشکالی نداره 😘</div>' : '<div class="soft">هر وقت خودت دلت خواست، من هستم 💕 دوستت دارم، پریا!</div>';
+ };
+}
+var LETTER = [
+ "پریا جان، یکی‌یدونه‌ی من، سلام 💕",
+ "من نزدیک چند هفته‌ست که روی این سایت کار می‌کنم و می‌خواستم با دیدنش ذوق کنی و خوشحال بشی 🥰",
+ "اول از همه می‌خوام ازت تشکر کنم، بابت اینکه توی همه‌ی شرایط و همه‌ی لحظه‌ها کنارم بودی و بهم دلگرمی دادی. این برام خیلی باارزشه و خوشحالم که دارمت؛ خوشحالم که دختری به زیبایی تو رو دارم 🌹",
+ "شرمنده که امسال نتونستم چیزی برات بگیرم، ولی گفتم شاید با این کارم ذره‌ای خوشحال بشی و منم از لبخند تو خوشحال بشم 🎀",
+ "می‌دونی که جونم به جونت بنده، خانم کوچولو 💞",
+ "از ته قلبم برات آرزو می‌کنم همیشه بهترین‌ها برات رقم بخوره و مهندس خفنی بشی 👩‍💻✨",
+ "خیلی زیاد دوستت دارم، خرگوش کوچولوی من 🐰💗",
+ "روزت مبارک، پریا نفسم 💖🕯️"
+];
+function render(){
+ if(tick){clearInterval(tick);tick=null;}
+ if(i>STAGES.length+1){ spicy(); return; }
+ if(i>STAGES.length){
+  document.body.classList.add('love'); startHearts();
+  var h='<div class="love-wrap"><div class="letter"><h1>💌 برای تو 💌</h1>';
+  LETTER.forEach(function(t,k){ h+='<p style="animation-delay:'+(0.6+k*1.4)+'s">'+t+'</p>'; });
+  h+='<p class="sign" style="animation-delay:'+(0.6+LETTER.length*1.4)+'s">همیشه مال تو، پارسا 💌</p></div><button class="btn" id="more" style="opacity:0;animation:fadeup .9s forwards;animation-delay:'+(2+LETTER.length*1.4)+'s;margin-top:18px">یه بخش دیگه هم هست... 😈</button></div>'+candles();
+  app.innerHTML=h; window.scrollTo(0,0); document.getElementById('more').onclick=function(){ i=STAGES.length+2; save(); render(); }; return;
+ }
+ if(i===STAGES.length){
+  app.innerHTML='<div class="card">'+cat+'<h1>همه‌ی چالش‌ها رو بردی! 🏆</h1><p>آفرین دختر خوب! حالا یکی از این دو تا گزینه رو انتخاب کن:</p><button class="opt" id="bye">خداحافظی 👋</button><button class="opt" id="smile">😏</button><div id="e"></div></div>';
+  confetti();
+  document.getElementById('bye').onclick=function(){
+   var e=document.getElementById('e'); e.innerHTML='';
+   setTimeout(function(){ e.innerHTML='<div class="err">⚠️ ارور! دختر خوب، اصل داستان تو اون یک گزینه‌ست 😏</div>'; },30);
+  };
+  document.getElementById('smile').onclick=function(){ next(); };
+  return;
+ }
+ if(i===0 && !started){
+  app.innerHTML='<div class="card">'+cat+'<h1>سلام '+NAME+' جان! 🎀</h1><p>روزت مبارک! من برات یه ماجراجویی کوچولو آماده کردم. ۵ تا چالش داری؛ بعضیاش سوالن و بعضیاش عملی. بریم؟</p><button class="btn" id="go">بزن بریم 💕</button></div>';
+  document.getElementById('go').onclick=function(){started=true;render()}; return;
+ }
+ var s=STAGES[i], h='<div class="card">'+hearts()+'<h2>'+s.title+'</h2>';
+ if(s.t==='quiz'){
+  h+='<p><b>'+s.q+'</b></p>';
+  var opts=s.o.map(function(o,k){return {o:o,ok:k===s.a}}); opts=shuffle(opts);
+  opts.forEach(function(x,k){ h+='<button class="opt" data-ok="'+(x.ok?1:0)+'">'+x.o+'</button>'; });
+  h+='<div class="msg" id="m"></div></div>'; app.innerHTML=h;
+  app.querySelectorAll('.opt').forEach(function(b){ b.onclick=function(){
+   if(b.dataset.ok==='1'){ b.classList.add('good'); document.getElementById('m').textContent='آفرین! درسته 🎉'; confetti(); setTimeout(next,1300); }
+   else { b.classList.remove('bad'); void b.offsetWidth; b.classList.add('bad'); document.getElementById('m').textContent='اوپس! یه بار دیگه امتحان کن 🙈'; }
+  };});
+ } else {
+  h+='<div class="task">'+s.task+'</div>';
+  if(s.timer) h+='<div class="timer" id="tm">'+s.timer+'</div><button class="opt" id="st">⏱️ شروع تایمر</button>';
+  h+='<p>کد مخفی رو وارد کن:</p><input id="c" placeholder="• • • •" autocomplete="off" autocapitalize="off"><button class="btn" id="ok">تایید ✨</button><div class="msg" id="m"></div></div>';
+  app.innerHTML=h;
+  if(s.timer) document.getElementById('st').onclick=function(){
+   var t=s.timer, el=document.getElementById('tm'); if(tick) return; this.disabled=true;
+   tick=setInterval(function(){ t--; el.textContent=t>0?t:'تموم شد! 🎉'; if(t<=0){clearInterval(tick);tick=null;} },1000);
+  };
+  var chk=function(){ if(norm(document.getElementById('c').value)===norm(s.code)){ document.getElementById('m').textContent='کد درسته! ماموریت انجام شد 💖'; confetti(); setTimeout(next,1300); } else { document.getElementById('m').textContent='کد اشتباهه! از من بپرس 😜'; } };
+  document.getElementById('ok').onclick=chk;
+  document.getElementById('c').onkeydown=function(e){ if(e.key==='Enter') chk(); };
+ }
+}
+render();
+</script>
+</body>
+</html>
